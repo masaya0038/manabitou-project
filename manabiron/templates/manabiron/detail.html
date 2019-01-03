@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-2">
+  <img src="{{manabiron.image.url}}" class="img-fluid">
+  </div>
+  <div class="col-10">
+  <a href="{{ manabiron.url }}"><h1>{{ manabiron.title }}</h1></a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-4">
+  <h4>Written by {{manabiron.manabitoauthor.username}}</h4>
+  </div>
+  <div class="col-6 text-right">
+  <h4>{{manabiron.pub_date}}</h4>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-8">
+  {{manabiron.body}}
+  </div>
+</div>
+
+
+
+{% endblock %}

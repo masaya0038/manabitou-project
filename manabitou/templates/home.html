@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+Home!
+<br />
+<br />
+
+What is <a href="{% url 'about'%}">Manabitou</a> ?
+<br />
+<br />
+
+Go to <a href="{% url 'manabironhome' %}">Manabiron</a>
+<br />
+<br />
+
+Meet some <a href="{% url 'manabitohome'%}">Manabito</a>
+
+{% endblock %}

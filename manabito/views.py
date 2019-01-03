@@ -37,3 +37,7 @@ def logout(request):
     if request.method == 'POST':
         auth.logout(request)
         return redirect('home')
+
+def manabitohome(request):
+    manabitos = User.objects
+    return render(request, 'manabito/home.html',{'manabitos':manabitos})
